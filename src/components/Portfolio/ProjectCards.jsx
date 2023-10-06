@@ -29,7 +29,7 @@ function BachelorCard() {
                 height: 576,
                 width: 1024
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="llemmoo.github.io/src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
