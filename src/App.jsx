@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
+import { AnimatePresence } from "framer-motion"
 import Index from './Index';
 import Portfolio from './components/Portfolio/Portfolio';
-import { useLocation } from 'react-router-dom';
-import { AnimatePresence } from "framer-motion"
+
 
 function AnimatedRoutes(){
   const location = useLocation();

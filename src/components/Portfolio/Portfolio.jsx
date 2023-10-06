@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import { Button, Box, Grid, Typography } from '@mui/material';
 import { BachelorCard } from './ProjectCards'
-import { Button, Box, Card, CardContent, Grid, Typography } from '@mui/material';
 import { motion } from "framer-motion"
 import ContactForm from '../Information/ContactForm';
 

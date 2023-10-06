@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import Box from '@mui/material/Box';
-import { Backdrop, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Backdrop, Card, CardActionArea, CardContent, CardMedia, Grid, Typography, Box } from '@mui/material';
+import React from 'react'
+
+
 
 function BachelorCard() {
   const [open, setOpen] = React.useState(false);

@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import Button from '@mui/material/Button';
-import { Card, CardContent, Grid, Typography, Paper, Stack } from '@mui/material';
+import { Card, CardContent, Grid, Typography, TextField, Button} from '@mui/material';
 import { motion } from "framer-motion"
+
 
 export default class ContactForm extends Component {
   render() {

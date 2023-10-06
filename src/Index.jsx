@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
-import { motion } from "framer-motion"
 import { Box, Button, Grid, Typography } from '@mui/material'
-import SourceIcon from '@mui/icons-material/Source';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import SourceIcon from '@mui/icons-material/Source';
+import { motion } from "framer-motion"
+
+
 import './styles/index.css'
 
 export default class Index extends Component {
