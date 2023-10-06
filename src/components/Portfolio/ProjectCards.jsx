@@ -1,8 +1,8 @@
-import { Backdrop, Card, CardActionArea, CardContent, CardMedia, Grid, Typography, Box } from '@mui/material';
+import { Backdrop, Card, CardActionArea, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import React from 'react'
 
 
-
+// Bachelor Thesis Content Card
 function BachelorCard() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {

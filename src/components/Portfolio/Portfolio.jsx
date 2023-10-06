@@ -24,7 +24,7 @@ export default class Projects extends Component {
       >
       <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
       <Typography variant='h1'> Portfolio </Typography> 
-      <Button onClick={handleScroll} size='large' variant='outlined' sx={{color: '#ffffff', maxHeight: 50, marginLeft: '120vh'}}>Contact Me</Button>
+      <Button onClick={handleScroll} size='large' sx={{color: '#ffffff', maxHeight: 50, marginLeft: '120vh'}}>Contact Me</Button>
       </Grid>
       <Grid container
       direction="row"

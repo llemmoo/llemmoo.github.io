@@ -1,12 +1,31 @@
 import React, { Component } from 'react'
 import { Card, CardContent, Grid, Typography, TextField, Button} from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { grey, purple, } from '@mui/material/colors';
 import { motion } from "framer-motion"
 
+const theme = createTheme({
+  palette: {
+   primary: {
+    light: '#757ce8',
+    main: '#3f50b5',
+    dark: '#002884',
+    contrastText: '#fff',
+            },
+ secondary: {
+   light: '#ff7961',
+   main: '#ffffff',
+   dark: '#ba000d',
+   contrastText: '#000',
+            },
+           },
+          });
 
 export default class ContactForm extends Component {
   render() {
     return (
       <>
+      
       <motion.div
         initial={{ opacity: 0}}
         animate={{ opacity: 1 }}
@@ -29,7 +48,9 @@ export default class ContactForm extends Component {
                     <TextField label='Message' multiline rows={8} placeholder='Enter your message here' variant='outlined' fullWidth/>
                 </Grid>
                 <Grid xs={12} item>
-                <Button type='submit' variant='contained' fullWidth color='error'> Submit </Button>
+                <ThemeProvider theme={theme}>
+                <Button type='submit' variant='contained' fullWidth color='secondary'> Submit </Button>
+                </ThemeProvider>
                 </Grid>
             </Grid>
             </form>
@@ -40,3 +61,4 @@ export default class ContactForm extends Component {
     )
   }
 }
+
