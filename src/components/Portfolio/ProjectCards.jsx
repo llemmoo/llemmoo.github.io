@@ -2,6 +2,7 @@ import { Backdrop, Card, CardActionArea, CardContent, CardMedia, Typography, Box
 import React from 'react'
 
 
+
 // Bachelor Thesis Content Card
 function BachelorCard() {
   const [open, setOpen] = React.useState(false);

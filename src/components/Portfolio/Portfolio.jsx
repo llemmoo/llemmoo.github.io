@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { Button, Box, Grid, Typography, IconButton } from '@mui/material';
+import { Box, Grid, Typography, IconButton } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
 import { BachelorCard } from './ProjectCards'
 import { motion } from "framer-motion"
 import ContactForm from '../Information/ContactForm';
+import '../../styles/Index.css';
 
 function handleScroll() {
   window.scroll({
@@ -13,6 +15,16 @@ function handleScroll() {
   });
 }
 
+const bigText = createTheme({
+  typography: {
+    fontFamily: '"Martian Mono"',
+    fontSize: 50,
+    fontWeightLight:400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700 
+  },
+});
 
 export default class Projects extends Component {
   render() {

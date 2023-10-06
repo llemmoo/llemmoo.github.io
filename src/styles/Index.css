@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
 body {
 	background: linear-gradient(-45deg, #000000, rgb(31, 30, 30), #101014, #1b1b30);
 	background-size: 400% 400%;

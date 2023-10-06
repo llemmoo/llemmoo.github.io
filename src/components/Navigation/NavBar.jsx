@@ -1,7 +1,6 @@
 import { AppBar, Box, Toolbar, Button } from '@mui/material'
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-
 import { IconButton, DashboardIcon } from '@mui/icons-material/';
 
 const navItems = ['about', 'portfolio', 'contact'];
