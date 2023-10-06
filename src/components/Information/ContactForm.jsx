@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Card, CardContent, Grid, Typography, TextField, Button} from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { grey, purple, } from '@mui/material/colors';
 import { motion } from "framer-motion"
 
 const theme = createTheme({
@@ -15,9 +14,9 @@ const theme = createTheme({
  secondary: {
    light: '#ff7961',
    main: '#ffffff',
-   dark: '#ba000d',
+   dark: '#90caf9',
    contrastText: '#000',
-            },
+           }
            },
           });
 
@@ -39,13 +38,13 @@ export default class ContactForm extends Component {
         <form>
             <Grid container spacing={2}>
                 <Grid xs={12} sm={6} item>
-                    <TextField label='Name' placeholder='Please enter your name' variant='outlined' fullWidth/>
+                    <TextField label='Name' placeholder='Please enter your name' variant='standard' fullWidth/>
                 </Grid>
                 <Grid xs={12} sm={6} item>
-                    <TextField label='Email' placeholder='Please enter your email address' variant='outlined' fullWidth/>
+                    <TextField label='Email' placeholder='Please enter your email address' variant='standard' fullWidth/>
                 </Grid>
                 <Grid xs={12} item>
-                    <TextField label='Message' multiline rows={8} placeholder='Enter your message here' variant='outlined' fullWidth/>
+                    <TextField label='Message' multiline rows={8} placeholder='Enter your message here' variant='standard' fullWidth/>
                 </Grid>
                 <Grid xs={12} item>
                 <ThemeProvider theme={theme}>
