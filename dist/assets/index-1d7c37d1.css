@@ -1,0 +1,1 @@
+body{background:linear-gradient(-45deg,#000000,rgb(31,30,30),#101014,#1b1b30);background-size:400% 400%;animation:gradient 30s ease infinite;height:100vh}@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}to{background-position:0% 50%}}
