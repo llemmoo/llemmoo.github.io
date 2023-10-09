@@ -4,7 +4,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
 import { BachelorCard } from './ProjectCards'
 import { motion } from "framer-motion"
-import ContactForm from '../Information/ContactForm';
+import ContactForm from '../Forms/ContactForm';
 import '../../styles/Index.css';
 
 function handleScroll() {
@@ -18,7 +18,7 @@ function handleScroll() {
 const bigText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 50,
+    fontSize: 60,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -36,7 +36,9 @@ export default class Projects extends Component {
         exit={{ opacity: 0, transition: { duration: 0.7} }}
       >
       <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
-      <Typography variant='h1'> Portfolio </Typography> 
+      <ThemeProvider theme={bigText}>
+      <Typography> Portfolio </Typography> 
+      </ThemeProvider>
       <IconButton onClick={handleScroll} size='large' sx={{color: '#ffffff', maxHeight: 50, marginLeft: '120vh'}}><EmailIcon/></IconButton>
       </Grid>
       <Grid container
@@ -44,6 +46,7 @@ export default class Projects extends Component {
       alignItems="center"
       justifyContent="center"
       minHeight='70vh'>
+        <BachelorCard/>
         <BachelorCard/>
         <BachelorCard/>
         <BachelorCard/>
