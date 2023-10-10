@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Box, Grid, Typography, IconButton } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { EmailIcon } from '@mui/icons-material/Email';
+import EmailIcon from '@mui/icons-material/Email';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { BachelorCard } from './MiniProjectCards'
 import { motion } from "framer-motion";
@@ -16,14 +16,6 @@ function handleScroll() {
     left: 0, 
     behavior: 'smooth',
   });
-}
-export const Item = () => {
-  let history = useHistory();
-  return (
-      <>
-        <button onClick={() => history.goBack()}>Back</button>
-      </>
-  );
 };
 
 const bigText = createTheme({
@@ -40,7 +32,7 @@ const bigText = createTheme({
 const BigCardText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 50,
+    fontSize: 60,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -110,6 +102,7 @@ switch (slug) {
 //Layout for maximized individual cards
 const IndividualLayout = () => {
   const Path = useLocation();
+  let navigate = useNavigate();
   return (
     <>
     <motion.div
@@ -121,7 +114,7 @@ const IndividualLayout = () => {
     <ThemeProvider theme={BigCardText}>
     <Typography> Portfolio </Typography> 
     </ThemeProvider>
-    <IconButton>
+    <IconButton onClick={() => navigate(-1)}>
       <ArrowBackIcon/>
     </IconButton>
     </Grid>

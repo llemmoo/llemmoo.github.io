@@ -1,6 +1,8 @@
 import { Button, Backdrop, Card, CardActionArea, CardContent, CardMedia, CardActions, Typography, Box, ThemeProvider, createTheme } from '@mui/material';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import WebAssetIcon from '@mui/icons-material/WebAsset';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { WebAsset } from '@mui/icons-material';
 // Card body text theme
 const bodyText = createTheme({
   typography: {
@@ -74,7 +76,7 @@ function BigBachelor() {
               src="./src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
-        <CardContent sx={{}}>
+        <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
           Bachelor Thesis
@@ -89,7 +91,13 @@ function BigBachelor() {
           </Typography>
           </ThemeProvider>
           <CardActions>
-            <ThemeProvider theme={buttonText}>
+        <ThemeProvider theme={buttonText}>
+          <Button target='_blank' href='' startIcon={<GitHubIcon/>}>
+            Github Link
+          </Button>
+          <Button target='_blank' href='' startIcon={<WebAssetIcon/>}>
+            Website
+          </Button>
         </ThemeProvider>
       </CardActions>
         </CardContent>

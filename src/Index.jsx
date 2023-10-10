@@ -1,8 +1,9 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography, IconButton } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SourceIcon from '@mui/icons-material/Source';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from "framer-motion";
 import './styles/index.css';
 
@@ -47,7 +48,8 @@ export default class Index extends Component {
         animate={{ opacity: 1,  transition: { duration: 0.7}}}
         exit={{ opacity: 0, transition: { duration: 0.7} }}
       >
-      <Grid container sx={{ alignContent: 'center', justifyContent: 'center', minHeight: '100vh'}}>
+        <Grid>
+      <Grid container sx={{ alignContent: 'center', justifyContent: 'center', minHeight: '100vh', direction: 'column'}}>
         <Box sx={{textAlign: 'center', alignContent: 'center', justifyContent: 'center'}}>
           <ThemeProvider theme={bigText}>
         <Typography size='h1' sx={{userSelect: 'none'}}>
@@ -55,16 +57,22 @@ export default class Index extends Component {
         </Typography>
         </ThemeProvider>
         <ThemeProvider theme={smallText}>
-        <Typography sx={{userSelect: 'none'}}>
+        <Typography textAlign='center' sx={{userSelect: 'none'}}>
           Junior Developer
         </Typography>
         </ThemeProvider>
         <ThemeProvider theme={buttonText}>
-        <Button  component={Link} to={`/portfolio`} size='large' endIcon={<SourceIcon fontSize='small'/>} sx={{ color: '#ffffff', m:4 }}>
+        <Button  component={Link} to={`/portfolio`} size='large' endIcon={<SourceIcon fontSize='small'/>} sx={{ color: '#ffffff', m:4}}>
           My Work
         </Button>
         </ThemeProvider>
         </Box>
+        </Grid>
+        <ThemeProvider theme={buttonText}>
+        <IconButton target='_blank' href='https://github.com/llemmoo/llemmoo.github.io' sx={{ color: '#ffffff', m:4, float: 'right', marginTop: '-100px' }}>
+            <GitHubIcon/>
+          </IconButton>
+          </ThemeProvider>
         </Grid>
       </motion.div>
       </>
