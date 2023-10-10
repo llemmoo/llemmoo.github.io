@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, useLocation } from 'react';
 import { Box, Grid, Typography, IconButton } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
-import { BachelorCard } from './ProjectCards'
-import { motion } from "framer-motion"
+import { BachelorCard } from './MiniProjectCards'
+import { motion } from "framer-motion";
 import ContactForm from '../Forms/ContactForm';
+import {bigBachelor, bigP2P, bigIOT, bigSWEA, bigExsys} from './BigProjectCards';
 import '../../styles/Index.css';
 
 function handleScroll() {
@@ -25,9 +26,8 @@ const bigText = createTheme({
     fontWeightBold: 700 
   },
 });
-
-export default class Projects extends Component {
-  render() {
+// Entire portfolio page with minimized cards
+const PortfolioLayout = () => {
     return (
       <>
       <motion.div
@@ -45,7 +45,7 @@ export default class Projects extends Component {
       direction="row"
       alignItems="center"
       justifyContent="center"
-      minHeight='70vh'>
+      minHeight='65vh'>
         <BachelorCard/>
         <BachelorCard/>
         <BachelorCard/>
@@ -55,11 +55,61 @@ export default class Projects extends Component {
         <Grid container alignContent='center' justifyContent='center'>
         <Box borderRadius='20px' sx={{ width: '100vh', height: 6, backgroundColor: 'white', justifyContent: 'center', alignSelf: 'center'}}/>
         </Grid>
-        <Grid item paddingTop='155px' paddingBottom='50px'>
+        <Grid item paddingTop='225px' paddingBottom='125px'>
           <ContactForm/>
         </Grid>
         </motion.div>
       </>
     )
-  }
+};
+
+const renderSwitch = ({ slug, ...props}) => {
+switch (slug) {
+  case 'bigBachelor':
+      return <bigBachelor {... props}/>;
+  
+  case 'bigIOT': 
+      return <bigIOT {... props}/>;
+    
+  case 'bigBachelor':
+      return <bigBachelor {... props}/>;
+  
+  case 'bigIOT': 
+      return <bigIOT {... props}/>;
+
+  case 'bigIOT': 
+      return <bigIOT {... props}/>;
+
+  default:
+    return null;
 }
+};
+
+
+//Layout for maximized individual cards
+const IndividualLayout = () => {
+  const Path = useLocation();
+  return (
+    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1, transition: { duration: 0.7} }}
+      exit={{ opacity: 0, transition: { duration: 0.7} }}
+    >
+    <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
+    <ThemeProvider theme={bigText}>
+    <Typography> Portfolio </Typography> 
+    </ThemeProvider>
+    </Grid>
+    <Grid container
+    direction="row"
+    alignItems="center"
+    justifyContent="center">
+      <renderSwitch slug={Path.pathname.split("/")[2]}/>
+      </Grid>
+      </motion.div>
+    </>
+  )
+};
+
+export { PortfolioLayout, IndividualLayout };

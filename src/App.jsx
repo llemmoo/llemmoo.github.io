@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
 import Index from './Index';
-import Portfolio from './components/Portfolio/Portfolio';
+import { PortfolioLayout, IndividualLayout } from './components/Portfolio/Portfolio';
 
 
 function AnimatedRoutes(){
@@ -14,7 +14,12 @@ function App() {
     <AnimatePresence>
       <Routes>
         <Route path="/" element={<Index/>} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<PortfolioLayout />} />
+        <Route path="/portfolio/bachelor" element={<PortfolioLayout />} />
+        <Route path="/portfolio/SWEA" element={<PortfolioLayout />} />
+        <Route path="/portfolio/EXSYS" element={<PortfolioLayout />} />
+        <Route path="/portfolio/P2P" element={<PortfolioLayout />} />
+        <Route path="/portfolio/IOT" element={<PortfolioLayout />} />
       </Routes>
       </AnimatePresence>
     </>
