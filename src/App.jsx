@@ -15,11 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Index/>} />
         <Route path="/portfolio" element={<PortfolioLayout />} />
-        <Route path="/portfolio/bachelor" element={<PortfolioLayout />} />
-        <Route path="/portfolio/SWEA" element={<PortfolioLayout />} />
-        <Route path="/portfolio/EXSYS" element={<PortfolioLayout />} />
-        <Route path="/portfolio/P2P" element={<PortfolioLayout />} />
-        <Route path="/portfolio/IOT" element={<PortfolioLayout />} />
+        <Route path="/portfolio/bachelor" element={<IndividualLayout />} />
+        <Route path="/portfolio/SWEA" element={<IndividualLayout />} />
+        <Route path="/portfolio/EXSYS" element={<IndividualLayout />} />
+        <Route path="/portfolio/P2P" element={<IndividualLayout />} />
+        <Route path="/portfolio/IOT" element={<IndividualLayout />} />
       </Routes>
       </AnimatePresence>
     </>

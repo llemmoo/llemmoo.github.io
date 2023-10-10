@@ -1,11 +1,13 @@
-import React, { Component, useLocation } from 'react';
+import React, { Component } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Box, Grid, Typography, IconButton } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import EmailIcon from '@mui/icons-material/Email';
+import { EmailIcon } from '@mui/icons-material/Email';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { BachelorCard } from './MiniProjectCards'
 import { motion } from "framer-motion";
 import ContactForm from '../Forms/ContactForm';
-import {bigBachelor, bigP2P, bigIOT, bigSWEA, bigExsys} from './BigProjectCards';
+import {BigBachelor, BigP2P, BigIOT, BigSWEA, BigExsys} from './BigProjectCards';
 import '../../styles/Index.css';
 
 function handleScroll() {
@@ -15,11 +17,30 @@ function handleScroll() {
     behavior: 'smooth',
   });
 }
+export const Item = () => {
+  let history = useHistory();
+  return (
+      <>
+        <button onClick={() => history.goBack()}>Back</button>
+      </>
+  );
+};
 
 const bigText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
     fontSize: 60,
+    fontWeightLight:400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700 
+  },
+});
+
+const BigCardText = createTheme({
+  typography: {
+    fontFamily: '"Martian Mono"',
+    fontSize: 50,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -63,22 +84,22 @@ const PortfolioLayout = () => {
     )
 };
 
-const renderSwitch = ({ slug, ...props}) => {
+const RenderSwitch = ({ slug, ...props}) => {
 switch (slug) {
-  case 'bigBachelor':
-      return <bigBachelor {... props}/>;
+  case 'bachelor':
+      return <BigBachelor {... props}/>;
   
   case 'bigIOT': 
-      return <bigIOT {... props}/>;
+      return <BigIOT {... props}/>;
     
   case 'bigBachelor':
-      return <bigBachelor {... props}/>;
+      return <BigBachelor {... props}/>;
   
   case 'bigIOT': 
-      return <bigIOT {... props}/>;
+      return <BigIOT {... props}/>;
 
   case 'bigIOT': 
-      return <bigIOT {... props}/>;
+      return <BigIOT {... props}/>;
 
   default:
     return null;
@@ -97,15 +118,18 @@ const IndividualLayout = () => {
       exit={{ opacity: 0, transition: { duration: 0.7} }}
     >
     <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
-    <ThemeProvider theme={bigText}>
+    <ThemeProvider theme={BigCardText}>
     <Typography> Portfolio </Typography> 
     </ThemeProvider>
+    <IconButton>
+      <ArrowBackIcon/>
+    </IconButton>
     </Grid>
     <Grid container
     direction="row"
     alignItems="center"
     justifyContent="center">
-      <renderSwitch slug={Path.pathname.split("/")[2]}/>
+      <RenderSwitch slug={Path.pathname.split("/")[2]}/>
       </Grid>
       </motion.div>
     </>

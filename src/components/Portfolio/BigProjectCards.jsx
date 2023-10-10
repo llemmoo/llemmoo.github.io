@@ -44,7 +44,7 @@ const buttonText = createTheme({
   },
 });
 // Bachelor Thesis Content Card
-function bigBachelor() {
+function BigBachelor() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -53,13 +53,13 @@ function bigBachelor() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: '90vh', maxHeight: '90vh'}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          height='300'
+          image='../src/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -90,9 +90,6 @@ function bigBachelor() {
           </ThemeProvider>
           <CardActions>
             <ThemeProvider theme={buttonText}>
-        <Button size="small" color="primary" component='object'>
-          Read More
-        </Button>
         </ThemeProvider>
       </CardActions>
         </CardContent>
@@ -100,7 +97,7 @@ function bigBachelor() {
     )
 }
 // P2P Card
-function bigP2P() {
+function BigP2P() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -149,7 +146,7 @@ function bigP2P() {
     )
 }
 // Real-Softwarekonstruktion
-function bigSWEA() {
+function BigSWEA() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -198,7 +195,7 @@ function bigSWEA() {
     )
 }
 // Eksperimentel Systemudvikling
-function bigExsys() {
+function BigExsys() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -246,7 +243,7 @@ function bigExsys() {
       </Card>
     )
 }
-function bigIOT() {
+function BigIOT() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -294,4 +291,4 @@ function bigIOT() {
       </Card>
     )
 }
-export {bigBachelor, bigP2P, bigIOT, bigSWEA, bigExsys}
+export {BigBachelor, BigP2P, BigIOT, BigSWEA, BigExsys}
