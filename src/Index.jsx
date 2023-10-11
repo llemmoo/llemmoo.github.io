@@ -68,11 +68,9 @@ export default class Index extends Component {
         </ThemeProvider>
         </Box>
         </Grid>
-        <ThemeProvider theme={buttonText}>
         <IconButton target='_blank' href='https://github.com/llemmoo/llemmoo.github.io' sx={{ color: '#ffffff', m:4, float: 'right', marginTop: '-100px' }}>
             <GitHubIcon/>
           </IconButton>
-          </ThemeProvider>
         </Grid>
       </motion.div>
       </>

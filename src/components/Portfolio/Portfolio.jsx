@@ -66,7 +66,7 @@ const PortfolioLayout = () => {
         <BachelorCard/>
         </Grid>
         <Grid container alignContent='center' justifyContent='center'>
-        <Box borderRadius='20px' sx={{ width: '100vh', height: 6, backgroundColor: 'white', justifyContent: 'center', alignSelf: 'center'}}/>
+        <Box borderRadius='20px' sx={{ width: '100vh', height: 6, backgroundColor: '#ffffffb3', justifyContent: 'center', alignSelf: 'center'}}/>
         </Grid>
         <Grid item paddingTop='225px' paddingBottom='125px'>
           <ContactForm/>
@@ -81,16 +81,16 @@ switch (slug) {
   case 'bachelor':
       return <BigBachelor {... props}/>;
   
-  case 'bigIOT': 
-      return <BigIOT {... props}/>;
+  case 'P2P': 
+      return <BigP2P {... props}/>;
     
-  case 'bigBachelor':
-      return <BigBachelor {... props}/>;
+  case 'SWEA':
+      return <BigSWEA {... props}/>;
   
-  case 'bigIOT': 
-      return <BigIOT {... props}/>;
+  case 'exsys': 
+      return <BigExsys {... props}/>;
 
-  case 'bigIOT': 
+  case 'iot': 
       return <BigIOT {... props}/>;
 
   default:
@@ -110,19 +110,19 @@ const IndividualLayout = () => {
       animate={{ opacity: 1, transition: { duration: 0.7} }}
       exit={{ opacity: 0, transition: { duration: 0.7} }}
     >
-    <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
+    <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none'}}>
     <ThemeProvider theme={BigCardText}>
     <Typography> Portfolio </Typography> 
     </ThemeProvider>
-    <IconButton onClick={() => navigate(-1)}>
-      <ArrowBackIcon/>
-    </IconButton>
     </Grid>
     <Grid container
-    direction="row"
+    direction="column"
     alignItems="center"
     justifyContent="center">
       <RenderSwitch slug={Path.pathname.split("/")[2]}/>
+      <IconButton  size='large' onClick={() => navigate(-1)} sx={{margin: '5px'}}>
+      <ArrowBackIcon/>
+    </IconButton>
       </Grid>
       </motion.div>
     </>

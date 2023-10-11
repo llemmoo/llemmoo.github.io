@@ -13,7 +13,7 @@ const bodyText = createTheme({
   },
   palette: {
     primary: {
-      main: 'rgba(255, 255, 255, 0.7)'
+      main: '#ffffffb3'
     } 
   },
 });
@@ -39,7 +39,7 @@ const buttonText = createTheme({
   },
     palette: {
     primary: {
-      main: 'rgba(255, 255, 255, 0.7)'
+      main: '#ffffffb3'
     } 
   },
 });
@@ -59,7 +59,7 @@ function BachelorCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -71,7 +71,7 @@ function BachelorCard() {
                 height: 576,
                 width: 1024
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent sx={{}}>
@@ -90,7 +90,7 @@ function BachelorCard() {
           </ThemeProvider>
           <CardActions>
             <ThemeProvider theme={buttonText}>
-        <Button size="small" color="primary" component='object'>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/bachelor`}>
           Read More
         </Button>
         </ThemeProvider>
@@ -115,7 +115,7 @@ function P2PCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -127,7 +127,7 @@ function P2PCard() {
                 height: 576,
                 width: 1024
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -164,7 +164,7 @@ function SWEACard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -176,7 +176,7 @@ function SWEACard() {
                 height: 576,
                 width: 1024
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
