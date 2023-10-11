@@ -82,10 +82,10 @@ function BachelorCard() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
-          used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          Our thesis concerns the use of eye-tracking in VR-gaming. The purpose was to mimic 
+          eye-tracking concepts, without the use of eye-tracking technology. We called this
+          vision-based interactions. The project was built with C# and the Unity game engine,
+          with the use of a Meta Quest 2.
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
@@ -109,7 +109,7 @@ function P2PCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400, minHeight: 380}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -138,10 +138,10 @@ function P2PCard() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
-          used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          Sensor-data driven web application made possible with IoT devices such as Arduino
+          and M5Stack. ML algorithm trained to track the user's face and recognize
+          the emotions. Web application implemented with python backend and reactJS frontend.
+          MUI as CSS framework
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
@@ -165,7 +165,7 @@ function SWEACard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400, minHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -194,10 +194,10 @@ function SWEACard() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
-          used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          Civilization style game, built with Java. Project goal was to explore the strengths
+          of employing design patterns and refactorization of existing code to make expansion
+          easier. Different methodologies employed, in particular, agile and tests-first software design
+          meant to ease said expansion.
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
@@ -245,15 +245,15 @@ function ExsysCard() {
         <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Tech-wiki
+          Wiki for Adservice
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
-          used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          In collaboration with Adservice, we built a tech-wiki to support communication
+          between marketing workers and the engineers working on their services. The project
+          entailed ethnographic studies, to support the design process, as well as Javascript
+          web development to build the web application.
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
@@ -276,7 +276,7 @@ function IOTCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -305,10 +305,10 @@ function IOTCard() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
-          used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          4 web applications covering fullstack web development with Python and Javascript.
+          The applications were centered around the use of Python and Javascript for building
+          web applications, including WoT devices such as the M5Stack. The
+          M5Stack was programmed with MicroPython.
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
