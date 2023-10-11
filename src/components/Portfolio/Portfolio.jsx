@@ -4,7 +4,7 @@ import { Box, Grid, Typography, IconButton } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { BachelorCard } from './MiniProjectCards'
+import { BachelorCard, ExsysCard, IOTCard, P2PCard, SWEACard } from './MiniProjectCards'
 import { motion } from "framer-motion";
 import ContactForm from '../Forms/ContactForm';
 import {BigBachelor, BigP2P, BigIOT, BigSWEA, BigExsys} from './BigProjectCards';
@@ -60,10 +60,10 @@ const PortfolioLayout = () => {
       justifyContent="center"
       minHeight='65vh'>
         <BachelorCard/>
-        <BachelorCard/>
-        <BachelorCard/>
-        <BachelorCard/>
-        <BachelorCard/>
+        <SWEACard/>
+        <ExsysCard/>
+        <P2PCard/>
+        <IOTCard/>
         </Grid>
         <Grid container alignContent='center' justifyContent='center'>
         <Box borderRadius='20px' sx={{ width: '100vh', height: 6, backgroundColor: '#ffffffb3', justifyContent: 'center', alignSelf: 'center'}}/>

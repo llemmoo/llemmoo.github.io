@@ -248,7 +248,7 @@ function BigExsys() {
           component='img'
           height='300'
           image='../src/assets/projects/exsys/exsys.jpg'
-          alt="P2P graphs"
+          alt="exsys"
           />
           <Backdrop
           sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -307,8 +307,8 @@ function BigIOT() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='../src/assets/projects/SWEA/HotCiv.jpg'
-          alt="HotCiv"
+          image='../src/assets/projects/iot/iot.jpg'
+          alt="iot"
           />
           <Backdrop
           sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -317,9 +317,9 @@ function BigIOT() {
             <Box component="img"
               sx={{
                 height: '60vh',
-                width: '80vh'
+                width: '60vh'
               }}
-              src="../src/assets/projects/SWEA/HotCiv.jpg"/>
+              src="../src/assets/projects/iot/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>

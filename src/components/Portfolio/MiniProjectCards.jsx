@@ -68,16 +68,16 @@ function BachelorCard() {
           onClick={handleClose}>
             <Box component="img"
               sx={{
-                height: 576,
-                width: 1024
+                height: '60vh',
+                width: '80vh'
               }}
               src="../src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
-        <CardContent sx={{}}>
+        <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Bachelor Thesis
+          Bachelor's Thesis
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
@@ -88,9 +88,9 @@ function BachelorCard() {
           gaze aversion appears to continue in novelty.
           </Typography>
           </ThemeProvider>
-          <CardActions>
+          <CardActions sx={{paddingBottom:0}}>
             <ThemeProvider theme={buttonText}>
-        <Button size="small" color="primary" component={Link} to={`/portfolio/bachelor`}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/bachelor`} sx={{}}>
           Read More
         </Button>
         </ThemeProvider>
@@ -109,13 +109,13 @@ function P2PCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 300, margin:15, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/p2p/p2p.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -124,16 +124,16 @@ function P2PCard() {
           onClick={handleClose}>
             <Box component="img"
               sx={{
-                height: 576,
-                width: 1024
+                height: '80vh',
+                width: '60vh'
               }}
-              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/p2p/p2p.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Bachelor Thesis
+          IoT - P2P & Cloud
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
@@ -144,6 +144,13 @@ function P2PCard() {
           gaze aversion appears to continue in novelty.
           </Typography>
           </ThemeProvider>
+          <CardActions sx={{paddingBottom:0}}>
+            <ThemeProvider theme={buttonText}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/P2P`} sx={{}}>
+          Read More
+        </Button>
+        </ThemeProvider>
+      </CardActions>
         </CardContent>
       </Card>
     )
@@ -158,13 +165,13 @@ function SWEACard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 300, margin:15, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/SWEA/HotCiv.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -173,16 +180,16 @@ function SWEACard() {
           onClick={handleClose}>
             <Box component="img"
               sx={{
-                height: 576,
-                width: 1024
+                height: '60vh',
+                width: '70vh'
               }}
-              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/SWEA/HotCiv.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Bachelor Thesis
+          Civilization Game
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
@@ -193,6 +200,13 @@ function SWEACard() {
           gaze aversion appears to continue in novelty.
           </Typography>
           </ThemeProvider>
+          <CardActions sx={{paddingBottom:0}}>
+            <ThemeProvider theme={buttonText}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/SWEA`} sx={{}}>
+          Read More
+        </Button>
+        </ThemeProvider>
+      </CardActions>
         </CardContent>
       </Card>
     )
@@ -207,13 +221,13 @@ function ExsysCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 300, margin:15, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
           height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/exsys/exsys.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -222,16 +236,16 @@ function ExsysCard() {
           onClick={handleClose}>
             <Box component="img"
               sx={{
-                height: 576,
-                width: 1024
+                height: '60vh',
+                width: '90vh'
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/exsys/exsys.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Bachelor Thesis
+          Tech-wiki
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
@@ -242,6 +256,13 @@ function ExsysCard() {
           gaze aversion appears to continue in novelty.
           </Typography>
           </ThemeProvider>
+          <CardActions sx={{paddingBottom:0}}>
+            <ThemeProvider theme={buttonText}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/exsys`} sx={{}}>
+          Read More
+        </Button>
+        </ThemeProvider>
+      </CardActions>
         </CardContent>
       </Card>
     )
@@ -255,13 +276,13 @@ function IOTCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 300, margin:15, maxHeight: 400}}>
+      <Card style={{ maxWidth: 294, margin:5, maxHeight: 400}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
           height='150'
-          image='./src/assets/projects/bachelor/bachelor1.jpg'
+          image='../src/assets/projects/IOT/iot.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -270,16 +291,16 @@ function IOTCard() {
           onClick={handleClose}>
             <Box component="img"
               sx={{
-                height: 576,
-                width: 1024
+                height: '60vh',
+                width: '60vh'
               }}
-              src="./src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="../src/assets/projects/IOT/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
         <ThemeProvider theme={titleText}>
         <Typography justifyContent='center'>
-          Bachelor Thesis
+          Web of Things
           </Typography>
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
@@ -290,6 +311,13 @@ function IOTCard() {
           gaze aversion appears to continue in novelty.
           </Typography>
           </ThemeProvider>
+          <CardActions sx={{paddingBottom:0}}>
+            <ThemeProvider theme={buttonText}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/iot`} sx={{}}>
+          Read More
+        </Button>
+        </ThemeProvider>
+      </CardActions>
         </CardContent>
       </Card>
     )
