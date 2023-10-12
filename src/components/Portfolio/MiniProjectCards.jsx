@@ -59,7 +59,7 @@ function BachelorCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/bachelor/bachelor1.jpg'
+          image='/src/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -71,7 +71,7 @@ function BachelorCard() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="../src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="/src/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -115,7 +115,7 @@ function P2PCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/p2p/p2p.jpg'
+          image='/src/assets/projects/p2p/p2p.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -127,7 +127,7 @@ function P2PCard() {
                 height: '80vh',
                 width: '60vh'
               }}
-              src="../src/assets/projects/p2p/p2p.jpg"/>
+              src="/src/assets/projects/p2p/p2p.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -171,7 +171,7 @@ function SWEACard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/SWEA/HotCiv.jpg'
+          image='/src/assets/projects/SWEA/HotCiv.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -183,7 +183,7 @@ function SWEACard() {
                 height: '60vh',
                 width: '70vh'
               }}
-              src="../src/assets/projects/SWEA/HotCiv.jpg"/>
+              src="/src/assets/projects/SWEA/HotCiv.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -227,7 +227,7 @@ function ExsysCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/exsys/exsys.jpg'
+          image='/src/assets/projects/exsys/exsys.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -239,7 +239,7 @@ function ExsysCard() {
                 height: '60vh',
                 width: '90vh'
               }}
-              src="../src/assets/projects/exsys/exsys.jpg"/>
+              src="/src/assets/projects/exsys/exsys.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -282,7 +282,7 @@ function IOTCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../src/assets/projects/IOT/iot.jpg'
+          image='/src/assets/projects/IOT/iot.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -294,7 +294,7 @@ function IOTCard() {
                 height: '60vh',
                 width: '60vh'
               }}
-              src="../src/assets/projects/IOT/iot.jpg"/>
+              src="/src/assets/projects/IOT/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
