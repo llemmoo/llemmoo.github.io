@@ -187,7 +187,7 @@ function BigSWEA() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='../../../public/assets/projects/SWEA/HotCiv.jpg'
+          image='/HotCiv.jpg'
           alt="HotCiv"
           />
           <Backdrop
@@ -199,7 +199,7 @@ function BigSWEA() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="../../../public/assets/projects/SWEA/HotCiv.jpg"/>
+              src="/HotCiv.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -247,7 +247,7 @@ function BigExsys() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='../../../public/assets/projects/exsys/exsys.jpg'
+          image='/exsys.jpg'
           alt="exsys"
           />
           <Backdrop
@@ -259,7 +259,7 @@ function BigExsys() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="../../../public/assets/projects/exsys/exsys.jpg"/>
+              src="/exsys.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -307,7 +307,7 @@ function BigIOT() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='../../../public/assets/projects/iot/iot.jpg'
+          image='/iot.jpg'
           alt="iot"
           />
           <Backdrop
@@ -319,7 +319,7 @@ function BigIOT() {
                 height: '60vh',
                 width: '60vh'
               }}
-              src="../../../public/assets/projects/iot/iot.jpg"/>
+              src="/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>

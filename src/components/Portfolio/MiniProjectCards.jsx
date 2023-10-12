@@ -71,7 +71,7 @@ function BachelorCard() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="../../../public/assets/projects/bachelor/bachelor1.jpg"/>
+              src="/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -115,7 +115,7 @@ function P2PCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../../../public/assets/projects/p2p/p2p.jpg'
+          image='/p2p.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -127,7 +127,7 @@ function P2PCard() {
                 height: '80vh',
                 width: '60vh'
               }}
-              src="../../../public/assets/projects/p2p/p2p.jpg"/>
+              src="/p2p.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -171,7 +171,7 @@ function SWEACard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../../../public/assets/projects/SWEA/HotCiv.jpg'
+          image='/HotCiv.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -183,7 +183,7 @@ function SWEACard() {
                 height: '60vh',
                 width: '70vh'
               }}
-              src="../../../public/assets/projects/SWEA/HotCiv.jpg"/>
+              src="/HotCiv.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -227,7 +227,7 @@ function ExsysCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../../../public/assets/projects/exsys/exsys.jpg'
+          image='/exsys.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -239,7 +239,7 @@ function ExsysCard() {
                 height: '60vh',
                 width: '90vh'
               }}
-              src="../../../public/assets/projects/exsys/exsys.jpg"/>
+              src="/exsys.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -282,7 +282,7 @@ function IOTCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../../../public/assets/projects/IOT/iot.jpg'
+          image='/iot.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -294,7 +294,7 @@ function IOTCard() {
                 height: '60vh',
                 width: '60vh'
               }}
-              src="../../../public/assets/projects/IOT/iot.jpg"/>
+              src="/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
