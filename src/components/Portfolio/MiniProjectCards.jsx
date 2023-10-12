@@ -252,7 +252,7 @@ function ExsysCard() {
           <Typography color='primary'>
           In collaboration with Adservice, we built a tech-wiki to support communication
           between marketing workers and the engineers working on their services. The project
-          entailed ethnographic studies, to support the design process, as well as Javascript
+          entailed ethnographic studies, to support the design process, Javascript
           web development to build the web application.
           </Typography>
           </ThemeProvider>
