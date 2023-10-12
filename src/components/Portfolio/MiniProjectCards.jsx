@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const bodyText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 11,
+    fontSize: 10,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -31,7 +31,7 @@ const titleText = createTheme({
 const buttonText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 13,
+    fontSize: 12,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -53,7 +53,7 @@ function BachelorCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
