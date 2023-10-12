@@ -141,7 +141,7 @@ function P2PCard() {
           Sensor-data driven web application made possible with IoT devices such as Arduino
           and M5Stack. ML algorithm trained to track the user's face and recognize
           the emotions. Web application implemented with python backend and reactJS frontend.
-          MUI as CSS framework
+          MUI serving as CSS framework.
           </Typography>
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
