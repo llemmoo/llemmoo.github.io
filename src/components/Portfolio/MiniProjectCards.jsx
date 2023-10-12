@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const bodyText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 12,
+    fontSize: 11,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -31,7 +31,7 @@ const titleText = createTheme({
 const buttonText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 14,
+    fontSize: 13,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -58,7 +58,7 @@ function BachelorCard() {
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
+          height='200'
           image='/bachelor1.jpg'
           alt="moving mannequins"
           />
@@ -109,12 +109,12 @@ function P2PCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390, minHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
+          height='175'
           image='/p2p.jpg'
           alt="moving mannequins"
           />
@@ -165,12 +165,12 @@ function SWEACard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390, minHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
+          height='175'
           image='/HotCiv.jpg'
           alt="moving mannequins"
           />
@@ -221,12 +221,12 @@ function ExsysCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
+          height='175'
           image='/exsys.jpg'
           alt="moving mannequins"
           />
@@ -276,12 +276,12 @@ function IOTCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='150'
+          height='175'
           image='/iot.jpg'
           alt="moving mannequins"
           />
