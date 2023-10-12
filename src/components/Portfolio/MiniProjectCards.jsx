@@ -90,7 +90,7 @@ function BachelorCard() {
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
             <ThemeProvider theme={buttonText}>
-        <Button size="small" color="primary" component={Link} to={`/portfolio/bachelor`} sx={{}}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/bachelor`} sx={{ display: 'flex', justifyContent: 'space-between' }}>
           Read More
         </Button>
         </ThemeProvider>
@@ -258,7 +258,7 @@ function ExsysCard() {
           </ThemeProvider>
           <CardActions sx={{paddingBottom:0}}>
             <ThemeProvider theme={buttonText}>
-        <Button size="small" color="primary" component={Link} to={`/portfolio/exsys`} sx={{}}>
+        <Button size="small" color="primary" component={Link} to={`/portfolio/exsys`} sx={{ display: 'flex', justifyContent: 'space-between' }}>
           Read More
         </Button>
         </ThemeProvider>
