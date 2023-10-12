@@ -3,9 +3,9 @@ import React from 'react'
 import WebAssetIcon from '@mui/icons-material/WebAsset';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import p2pPDF from '../../assets/projects/p2p/p2pPDF.pdf';
-import bachelorPDF from '../../assets/projects/bachelor/bachelorPDF.pdf';
-import exsysPDF from '../../assets/projects/exsys/exsysPDF.pdf';
+import p2pPDF from '../../../public/assets/projects/p2p/p2pPDF.pdf';
+import bachelorPDF from '../../../public/assets/projects/bachelor/bachelorPDF.pdf';
+import exsysPDF from '../../../public/assets/projects/exsys/exsysPDF.pdf';
 // Card body text theme
 const bodyText = createTheme({
   typography: {
@@ -65,7 +65,7 @@ function BigBachelor() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='/src/assets/projects/bachelor/bachelor1.jpg'
+          image='/public/assets/projects/bachelor/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -77,7 +77,7 @@ function BigBachelor() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="/src/assets/projects/bachelor/bachelor1.jpg"/>
+              src="/public/assets/projects/bachelor/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -121,7 +121,7 @@ function BigP2P() {
             onClick={handleOpen}
             component='img'
             height='300'
-            image='/src/assets/projects/p2p/p2p.jpg'
+            image='/public/assets/projects/p2p/p2p.jpg'
             alt="P2P graphs"
             />
             <Backdrop
@@ -133,7 +133,7 @@ function BigP2P() {
                   height: '80vh',
                   width: '60vh'
                 }}
-                src="/src/assets/projects/p2p/p2p.jpg"/>
+                src="/public/assets/projects/p2p/p2p.jpg"/>
             </Backdrop>
           </CardActionArea>
           <CardContent>
@@ -187,7 +187,7 @@ function BigSWEA() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='/src/assets/projects/SWEA/HotCiv.jpg'
+          image='/public/assets/projects/SWEA/HotCiv.jpg'
           alt="HotCiv"
           />
           <Backdrop
@@ -199,7 +199,7 @@ function BigSWEA() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="/src/assets/projects/SWEA/HotCiv.jpg"/>
+              src="/public/assets/projects/SWEA/HotCiv.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -247,7 +247,7 @@ function BigExsys() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='/src/assets/projects/exsys/exsys.jpg'
+          image='/public/assets/projects/exsys/exsys.jpg'
           alt="exsys"
           />
           <Backdrop
@@ -259,7 +259,7 @@ function BigExsys() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="/src/assets/projects/exsys/exsys.jpg"/>
+              src="/public/assets/projects/exsys/exsys.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
@@ -307,7 +307,7 @@ function BigIOT() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='/src/assets/projects/iot/iot.jpg'
+          image='/public/assets/projects/iot/iot.jpg'
           alt="iot"
           />
           <Backdrop
@@ -319,7 +319,7 @@ function BigIOT() {
                 height: '60vh',
                 width: '60vh'
               }}
-              src="/src/assets/projects/iot/iot.jpg"/>
+              src="/public/assets/projects/iot/iot.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
