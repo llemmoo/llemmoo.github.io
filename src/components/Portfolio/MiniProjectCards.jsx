@@ -59,7 +59,7 @@ function BachelorCard() {
           onClick={handleOpen}
           component='img'
           height='150'
-          image='../../../public/assets/projects/bachelor/bachelor1.jpg'
+          image='/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
