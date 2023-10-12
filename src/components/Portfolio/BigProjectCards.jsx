@@ -65,7 +65,7 @@ function BigBachelor() {
           onClick={handleOpen}
           component='img'
           height='300'
-          image='../../../public/assets/projects/bachelor/bachelor1.jpg'
+          image='/bachelor1.jpg'
           alt="moving mannequins"
           />
           <Backdrop
@@ -77,7 +77,7 @@ function BigBachelor() {
                 height: '60vh',
                 width: '80vh'
               }}
-              src="../../../public/assets/projects/bachelor/bachelor1.jpg"/>
+              src="/bachelor1.jpg"/>
           </Backdrop>
         </CardActionArea>
         <CardContent>
