@@ -53,7 +53,7 @@ function BachelorCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420 }}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -109,7 +109,7 @@ function P2PCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420 }}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -165,7 +165,7 @@ function SWEACard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420 }}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -221,7 +221,7 @@ function ExsysCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420 }}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -276,7 +276,7 @@ function IOTCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 420, minHeight: 420 }}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
