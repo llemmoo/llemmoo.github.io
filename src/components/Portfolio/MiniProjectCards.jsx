@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const bodyText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 9,
+    fontSize: 12,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -31,7 +31,7 @@ const titleText = createTheme({
 const buttonText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 12,
+    fontSize: 14,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -53,7 +53,7 @@ function BachelorCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -109,7 +109,7 @@ function P2PCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 400, minHeight: 380}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390, minHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -165,7 +165,7 @@ function SWEACard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 400, minHeight: 390}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390, minHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
@@ -221,7 +221,7 @@ function ExsysCard() {
     setOpen(true);
   };
     return (
-      <Card style={{ maxWidth: 350, margin:5, maxHeight: 400}}>
+      <Card style={{ maxWidth: 350, margin:5, maxHeight: 390}}>
         <CardActionArea>
           <CardMedia 
           onClick={handleOpen}
