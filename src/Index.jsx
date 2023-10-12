@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SourceIcon from '@mui/icons-material/Source';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from "framer-motion";
-import './styles/index.css';
+import './styles/Index.css';
 
 const bigText = createTheme({
   typography: {

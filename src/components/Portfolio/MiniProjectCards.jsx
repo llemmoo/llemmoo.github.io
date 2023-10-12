@@ -83,7 +83,7 @@ function BachelorCard() {
           <ThemeProvider theme={bodyText}>
           <Typography color='primary'>
           Our thesis concerns the use of eye-tracking in VR-gaming. The purpose was to mimic 
-          eye-tracking concepts, without the use of eye-tracking technology. We called this
+          eye-tracking interactions, without the use of eye-tracking technology. We called this
           vision-based interactions. The project was built with C# and the Unity game engine,
           with the use of a Meta Quest 2.
           </Typography>
