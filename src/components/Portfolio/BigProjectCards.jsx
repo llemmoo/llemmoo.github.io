@@ -121,7 +121,7 @@ function BigP2P() {
             onClick={handleOpen}
             component='img'
             height='300'
-            image='../../../public/assets/projects/p2p/p2p.jpg'
+            image='/p2p.jpg'
             alt="P2P graphs"
             />
             <Backdrop
@@ -133,7 +133,7 @@ function BigP2P() {
                   height: '80vh',
                   width: '60vh'
                 }}
-                src="../../../public/assets/projects/p2p/p2p.jpg"/>
+                src="/p2p.jpg"/>
             </Backdrop>
           </CardActionArea>
           <CardContent>
