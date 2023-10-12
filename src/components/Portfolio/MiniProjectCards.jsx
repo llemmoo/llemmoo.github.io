@@ -58,7 +58,7 @@ function BachelorCard() {
           <CardMedia 
           onClick={handleOpen}
           component='img'
-          height='200'
+          height='175'
           image='/bachelor1.jpg'
           alt="moving mannequins"
           />
