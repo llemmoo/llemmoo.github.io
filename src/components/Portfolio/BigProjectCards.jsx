@@ -88,10 +88,17 @@ function BigBachelor() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary' lineHeight={1.5}>
-          Gaze interaction in video games, using eye tracking, is in growth. No longer only
+          Excerpt from the paper's abstract: <br/><br/>
+          "Gaze interaction in video games, using eye tracking, is in growth. No longer only
           used for novelty interaction but also as an integral part of the game’s mechanics.
-          However, while gaze interaction is becoming more and more prevalent, 
-          gaze aversion appears to continue in novelty.
+          However, while gaze interaction is becoming more and more prevalent, gaze aversion appears to continue 
+          in novelty. Within this paper, we explore the dichotomy of
+          ”see” and ”not see”(look, don’t look”) interactions with what we define as ”vision-based interactions”
+          as an alternative to traditional eye-tracking gaze interaction
+          for VR horror game elements<br/>...<br/>
+          Our results suggest that
+          we might be capable of expecting different interactions with differing intricacies to
+          elicit stronger responses from users to VR horror game elements.""
           </Typography>
           </ThemeProvider>
           <CardActions>
@@ -272,7 +279,15 @@ function BigExsys() {
           <Typography color='primary' lineHeight={1.5}>
           A tech-wiki built for Adservice as part of a course at AU. We were looking to
           delve into experimental systems development to aquaint ourselves with ethnographic
-          methods and approaches to systems development. 
+          methods and approaches to systems development. We ran exploratory interviews and
+          workshops initially to discover issues and the best approach to solving those issues.
+          We developed a prototype for which volunteers could provide feedback and subsequently
+          re-developed into a more advanced prototype. The subsequent developmental phases were
+          left at that due to time constraints, but the approach was meant to be agile. The results
+          from this project were positive at the hands of the volunteers, and said volunteers were
+          a part of the design process from the very beginning of the project, underlining the
+          focus on participatory design and user evaluation techniques. 
+          
           </Typography>
           </ThemeProvider>
           <CardActions>
@@ -330,8 +345,15 @@ function BigIOT() {
           </ThemeProvider>
           <ThemeProvider theme={bodyText}>
           <Typography color='primary' lineHeight={1.5}>
-          Course designed to show the power of python backend development and the deployment of
-          said backend on an linux apache server.
+          Course designed to build python backend development and the deployment of
+          said backend on an linux apache server. The course was concerned with the
+          development of IoT devices and coupling these devices to a front-end for 
+          users to utilize. The course introduced us to the M5Stack eco-system of
+          smaller IoT-able devices programmable with block-programming and micro-python.
+          This course parted the scope of the course into smaller partial-assignments
+          concluding with the development of a IoT device receiving sensor-data and 
+          transmitting this to the front-end of a web-application through the M5Stack's
+          powerful MQTT library, and an MQTT server.
           </Typography>
           </ThemeProvider>
           <CardActions>
