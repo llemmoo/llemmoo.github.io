@@ -154,11 +154,11 @@ function BigP2P() {
             When tasked to build a sensor data-driven application, we chose to provide a solution
             that would hit closer to home for us. We chose to work with a gaming-health monitoring
             platform for our solution. Provided with the sensors made available to us, we built 
-            something we could use in our everyday lives. We implemented the idea using ML, cloud
-            technologies, and MQTT brokerage for our web application. For the sensory side of things, 
-            the M5Stack eco-system was a pre-requisite from the get-go and we decided to build upon
-            this with an ESP32 Arduino to handle specific sensors. The M5Stack's ability to receive and
-            send sensor data through it's micropython libraries made it easy for MQTT integration.
+            something we could use in our everyday lives. <br/><br/>
+            We implemented the idea using ML, cloud technologies, and MQTT brokerage for our web application. 
+            For the sensory side of things, the M5Stack eco-system was a pre-requisite from the get-go and we 
+            decided to build upon this with an ESP32 Arduino to handle specific sensors. The M5Stack's ability 
+            to receive and send sensor data through it's micropython libraries made it easy for MQTT integration.
             </Typography>
             </ThemeProvider>
             <CardActions>
