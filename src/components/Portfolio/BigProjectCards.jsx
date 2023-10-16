@@ -10,7 +10,7 @@ import exsysPDF from '../../../public/assets/projects/exsys/exsysPDF.pdf';
 const bodyText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 10,
+    fontSize: 12,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
