@@ -1,1 +1,3 @@
-This project was made mainly with React, Vite, and MUI.
+This project was made with React, Vite, and MUI.
+
+Deployed with Netlify
