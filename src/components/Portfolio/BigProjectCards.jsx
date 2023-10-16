@@ -10,7 +10,7 @@ import exsysPDF from '../../../public/assets/projects/exsys/exsysPDF.pdf';
 const bodyText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 12,
+    fontSize: 14,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -37,7 +37,7 @@ const titleText = createTheme({
 const buttonText = createTheme({
   typography: {
     fontFamily: '"Martian Mono"',
-    fontSize: 12,
+    fontSize: 14,
     fontWeightLight:400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
@@ -220,7 +220,7 @@ function BigSWEA() {
           A course and project centered around the idea of real software development, instead of
           the less intensive and more prototype oriented programming we had worked with up until
           that point. The project's intentions were to teach the valuable lessons of refactoring,
-          agile development and the benefits of producing reusable, refactored code. This project taught
+          agile development and the benefits of producing reusable, refactored code.<br/><br/> This project taught
           me the use of design patterns in software development, and the importance of structured
           software development. The game was built using Java, structured in multiple assignments, meant
           to exercise refactorization and employment of design patterns in software as more and more advanced
@@ -279,7 +279,7 @@ function BigExsys() {
           <Typography color='primary' lineHeight={1.5}>
           A tech-wiki built for Adservice as part of a course at AU. We were looking to
           delve into experimental systems development to aquaint ourselves with ethnographic
-          methods and approaches to systems development. We ran exploratory interviews and
+          methods and approaches to systems development.<br/><br/> We ran exploratory interviews and
           workshops initially to discover issues and the best approach to solving those issues.
           We developed a prototype for which volunteers could provide feedback and subsequently
           re-developed into a more advanced prototype. The subsequent developmental phases were
@@ -348,7 +348,8 @@ function BigIOT() {
           Course designed to build python backend development and the deployment of
           said backend on an linux apache server. The course was concerned with the
           development of IoT devices and coupling these devices to a front-end for 
-          users to utilize. The course introduced us to the M5Stack eco-system of
+          users to utilize. <br/><br/>
+          The course introduced us to the M5Stack eco-system of
           smaller IoT-able devices programmable with block-programming and micro-python.
           This course parted the scope of the course into smaller partial-assignments
           concluding with the development of a IoT device receiving sensor-data and 
