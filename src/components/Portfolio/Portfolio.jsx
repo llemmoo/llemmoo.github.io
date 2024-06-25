@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import portfolioPdf from '../../../public/assets/Portfolio.pdf';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Box, Grid, Typography, IconButton } from '@mui/material';
+import { Box, Grid, Typography, IconButton, ButtonGroup, Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { BachelorCard, ExsysCard, IOTCard, P2PCard, SWEACard } from './MiniProjectCards'
 import { motion } from "framer-motion";
@@ -39,6 +41,17 @@ const BigCardText = createTheme({
     fontWeightBold: 700 
   },
 });
+
+const ButtonRoboto = createTheme({
+  typography: {
+    fontFamily: '"Martian Mono"',
+    fontSize: 13,
+    fontWeightLight:400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700 
+  },
+});
 // Entire portfolio page with minimized cards
 const PortfolioLayout = () => {
     return (
@@ -48,11 +61,18 @@ const PortfolioLayout = () => {
         animate={{ opacity: 1, transition: { duration: 0.7} }}
         exit={{ opacity: 0, transition: { duration: 0.7} }}
       >
-      <Grid container direction='row' sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'center' }}>
+      <Grid container direction='row' justifyContent="space-between" sx={{  paddingTop: '3vh', paddingLeft: '5vh', userSelect: 'none', textAlign: 'center', alignItems: 'space-between' }}>
       <ThemeProvider theme={bigText}>
       <Typography> Portfolio </Typography> 
       </ThemeProvider>
-      <IconButton onClick={handleScroll} size='large' sx={{color: '#ffffff', maxHeight: 50, marginLeft: '120vh'}}><EmailIcon/></IconButton>
+      <ThemeProvider theme={ButtonRoboto}>
+      <ButtonGroup sx={{marginRight: '3%'}} >
+        <Button target='_blank' variant='text' href={portfolioPdf} endIcon={<PictureAsPdfIcon/>} sx={{color: '#ffffff', maxHeight: 50}}>
+        <Typography>PDF PORTFOLIO</Typography>
+        </Button>
+        <IconButton onClick={handleScroll} size='large' sx={{color: '#ffffff', maxHeight: 50 }}><EmailIcon/></IconButton>
+      </ButtonGroup>
+      </ThemeProvider>
       </Grid>
       <Grid container
       direction="row"
